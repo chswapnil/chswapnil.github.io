@@ -1,65 +1,147 @@
 <!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png/gif" href="Icon.png" >
+<style>
 
-<html lang="en-US">
-<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+/* Style the header */
+.header {
+background-color: #ffffff;
+background:linear-gradient(#373737, #212121);
+padding:8px;
+text-align:left;
+vertical-align:baseline;
+width:100%
+}
+
+.footer {
+background-color: #ffffff;
+padding:8px;
+text-align:left;
+}
+
+#project_title {
+margin:0px;
+color:#fff;
+font-size:42px;
+font-weight:700;
+text-shadow:#111 0px 0px 10px;
+}
+
+#footer_wrap {
+background:#212121;
+color:#fff;
+margin-top:0px;
+margin-bottom:0px;
+margin-right:-16px;
 
 
+}
 
+#footertext{
+font-size:12px;
+font-family: Arial, Helvetica, sans-serif;
+padding:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
 
+}
+
+h1{
+margin-top:10px;
+margin-bottom:10px;
+margin-left:0px;
+margin-right:0px;
+font-family:'Lucida Grande', 'Calibri', Helvatica, Arial, San-seriff;
+font-size:36px;
+}
+
+#mytext{
+margin-top:10;
+margin-bottom:15;
+font-size:16px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+margin:0px;
+margin-right:16px;
+background:#f2f2f2;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+#img1{
+padding:1px;
+margin:10px 10px 10px 10px;
+border-style:solid;
+border-width:5px;
+border-color:#ffffff;
+}
+
+#img2{
+padding:2px;
+margin:1px 1px 1px 1px;
+}
+
+.container{
+display: flex;
+}
+.fixed{
+width: 300px;
+}
+.flex-item{
+flex-grow: 1;
+}
+
+</style>
+
+<head>
+<title>chswapnil.github.io</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
-<!-- HEADER -->
-<div id="header_wrap" class="outer">
-<header class="outer">
-<h1 id="project_title">chswapnil.github.io</h1>
-</header>
+
+<div class="header">
+  <h1 id="project_title">chswapnil.github.io</h1>
 </div>
 
 
 
-
-
-
-
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-<div  style="width:1200px;">
-
-<div style="width:300px; float:left;">
-<img src="mypicture.jpg" alt="Swapnil Chaughule" width="250" height="250">
-<a href="https://github.com/chswapnil">
-  <img src="GitHub2.png" alt="https://github.com/chswapnil" width="50" height="50">
-</a>
-<a href="https://www.linkedin.com/in/swapnil-chaughule-75006876/">
-  <img src="Linkedin3.png" alt="https://www.linkedin.com/in/swapnil-chaughule-75006876/" width="50" height="50">
-</a>
-</div> 
-
-<div style="width:800px; float:left;">
+<div class="container">
+<div class="fixed"> <img id="img1" src="mypicture.jpg" alt="Swapnil Chaughule" width="250" height="250"> </div>
+<div class="flex-item">
 <h1>Swapnil Chaughule</h1>
-<p>My name is Swapnil. I am a graduate student at University of Massachusetts Lowell. I am actively seeking a Full-time or an Internship position in the field of Embedded System, Software Engineering, Information Theory or IoT. I have an outstanding programming and debugging knowledge in C, C++ and Python. I also have an experience as Graduate Student Researcher which would prove my proficiency in conducting and documenting research. As a student I have been exposed to a lot of new software tools and protocols. I feel confident that with these skills I would definitely prove an assest to an engineering team in a software firm. </p>
 
+<div style="width:800px">
+<p id="mytext">My name is Swapnil. I am a graduate student at University of Massachusetts Lowell. I am actively seeking a Full-time or an Internship position in the field of Embedded System, Software Engineering, Information Theory or IoT. I have an outstanding programming and debugging knowledge in C, C++ and Python. I also have an experience as Graduate Student Researcher which would prove my proficiency in conducting and documenting research. As a student I have been exposed to a lot of new software tools and protocols. I feel confident that with these skills I would definitely prove an assest to an engineering team in a software firm.</p>
 </div>
 
+<div>
+<a href="https://github.com/chswapnil" title="https://github.com/chswapnil">
+<img id="img2" src="GitHub2.png" alt="https://github.com/chswapnil" width="50" height="50">
+</a>
+<a href="https://www.linkedin.com/in/swapnil-chaughule-75006876/" title="https://www.linkedin.com/in/swapnil-chaughule-75006876/">
+  <img id="img2" src="Linkedin3.png" alt="https://www.linkedin.com/in/swapnil-chaughule-75006876/" width="50" height="50">
+</a>
 </div>
-
-
-
-<embed style="margin:1000" src="CHAUGHULE_RESUME.pdf" width="800px" height="1075px" />
-
+ 
+<div>
+<embed style="margin-top:10px" src="CHAUGHULE_RESUME.pdf" width="800px" height="1075px" />
+</div> 
 </div>
-
-
-<!-- FOOTER  -->
-<div id="footer_wrap" class="outer">
-<footer class="outer">
-<p>Published on GitHub</p>
-</footer>
 </div>
-
-    
-  
 
 </body>
 
+<footer>
+<div class="footer" id="footer_wrap">
+<p id="footertext">Published on GitHub</p>
+</div>
+</footer>
+
 </html>
+
