@@ -7,7 +7,7 @@
 .header{
 	background-color: #ffffff;
 	background:linear-gradient(#373737, #212121);
-	padding:8px;
+	padding:0px;
 	text-align:left;
 	vertical-align:baseline;
 	width:100%
@@ -32,7 +32,7 @@
 	color:#fff;
 	margin-top:0px;
 	margin-bottom:0px;
-	margin-right:-16px;
+	margin-right:0px;
 }
 
 #footertext{
@@ -61,9 +61,13 @@ h1{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+#mytext2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
 	margin:0px;
-	margin-right:16px;
+	margin-right:0px;
 	background:#f2f2f2;
 	overflow-x:hidden;
 	overflow-y:scroll;
@@ -94,6 +98,31 @@ body{
 	flex-grow:1;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0px;
+    overflow: hidden;
+    background-color: transparents;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size:24px;
+}
+
+li a:hover {
+    background-color: #191919;
+}
+
 </style>
 
 <head>
@@ -105,7 +134,14 @@ body{
 <body>
 
 	<div class="header">
-		<h1 id="project_title">chswapnil.github.io</h1>
+	<ul>
+	<li><a id="mytext2" class="active" href="https://chswapnil.github.io/">Home</a></li>
+	<li><a id="mytext2" href="https://github.com/chswapnil">Projects</a></li>
+	<li><a id="mytext2" href="CHAUGHULE_RESUME.pdf" download>Resume</a></li>
+	<li><a id="mytext2" href="https://www.linkedin.com/in/swapnil-chaughule-75006876/">Contact</a></li>
+	</ul>
+		
+
 	</div>
 
 
